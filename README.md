@@ -1,4 +1,4 @@
-# Linear Autoencoders with DRO losses and FairPCA
+# Distributionally Robust Linear Autoencoders and FairPCA
 
 This repository accompanies the study: Yeh _et al_. **Robust self-supervised machine learning for single cell embeddings and annotations.** _bioRxiv_ (2025). This repository contains our exploratory implementation of Linear Autoencoders with DRO losses and FairPCA as other distributionally robust/fairness-aware alternatives to ([DR-GEM](https://github.com/Jerby-Lab/drgem/)).
 
