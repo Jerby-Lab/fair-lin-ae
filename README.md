@@ -13,14 +13,20 @@ This repository accompanies the study: Yeh _et al_. **Robust self-supervised mac
 	conda create -n fair-lin-ae python=3.11 pip
 	conda activate fair-lin-ae
 	```
-4. Install dependencies:
+3. Install dependencies:
+	```
 	pip install -r requirements.txt
+	```
 5. Run code for fitting Linear Autoencoders with DRO losses
+	```
 	cd src
 	python linae.py
+ 	```
 6. Run code for fitting FairPCA
+	```
 	cd src
 	python fairpca.py
+ 	```
 
 # **Software Requirements**
 * macOS: Tahoe 26.1
