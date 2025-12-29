@@ -4,17 +4,21 @@ This repository accompanies the study: Yeh _et al_. **Robust self-supervised mac
 
 # **Quick start**
 1. Download this repository from Github:
+   ```
 	git clone https://github.com/Jerby-Lab/fair-lin-ae
 	cd fair-lin-ae
+   ```
 2. (Recommended) Create conda environment (tested on version 24.7.1):
+	```
 	conda create -n fair-lin-ae python=3.11 pip
 	conda activate fair-lin-ae
-3. Install dependencies:
+	```
+4. Install dependencies:
 	pip install -r requirements.txt
-4. Run code for fitting Linear Autoencoders with DRO losses
+5. Run code for fitting Linear Autoencoders with DRO losses
 	cd src
 	python linae.py
-5. Run code for fitting FairPCA
+6. Run code for fitting FairPCA
 	cd src
 	python fairpca.py
 
