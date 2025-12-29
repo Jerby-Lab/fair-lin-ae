@@ -1,3 +1,12 @@
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+import torch.nn.init as init
+import math
+import numpy as np
+from torch.utils.data import Dataset, DataLoader
+from standard_PCA import std_PCA
+
 class tab_dataset(torch.utils.data.Dataset):
     """
     Simple Torch `Dataset` wrapper for tabular data stored as a NumPy array.
@@ -113,10 +122,6 @@ def geo_mean_through_log(numberList):
     float
         Geometric mean of `numberList`. If any entry is <= 1e-12, returns 0.
 
-    Notes
-    -----
-    The early-return threshold (1e-12) is a practical guard against `log(0)`
-    and extremely small values.
     """
     #if some is 0, return 0.
     if (np.amin(numberList) <= 1.e-12):
